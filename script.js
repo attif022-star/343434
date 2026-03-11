@@ -203,6 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (actionName === 'Word to PDF') {
                 fileInput.accept = '.doc,.docx';
                 fileInput.multiple = false;
+            } else if (actionName === 'Excel to PDF') {
+                fileInput.accept = '.xls,.xlsx';
+                fileInput.multiple = false;
+            } else if (actionName === 'Format to Word' || actionName === 'Format to Excel' || actionName === 'Format to Powerpoint') {
+                fileInput.accept = '.pdf';
+                fileInput.multiple = false;
             } else {
                 alert(`Backend for "${actionName}" is not ready in this demo version.`);
                 return;
