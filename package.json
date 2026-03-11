@@ -1,0 +1,21 @@
+{
+  "name": "easy-files-converter",
+  "version": "1.0.0",
+  "description": "Backend for Easy Files Converter",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "cors": "^2.8.6",
+    "docx-pdf": "^0.0.1",
+    "express": "^4.22.1",
+    "jszip": "^3.10.1",
+    "multer": "^1.4.5-lts.1",
+    "pdf-lib": "^1.17.1",
+    "pdf2json": "^4.0.2",
+    "sharp": "^0.33.4"
+  }
+}
